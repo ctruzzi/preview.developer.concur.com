@@ -44,7 +44,7 @@ Returns cash advance IDs associated with the specified report.
 ### URI
 
 ```shell
-GET /expensereports/v4/reports/{reportId}/cashAdvances
+https://{datacenterURI}/expensereports/v4/reports/{reportId}/cashAdvances
 ```
 
 ### Parameters
@@ -52,6 +52,11 @@ GET /expensereports/v4/reports/{reportId}/cashAdvances
 | Name     | Type     | Format | Description                          |
 |----------|----------|--------|--------------------------------------|
 | reportId | `string` | path   | The unique identifier of the report. |
+
+### Payloads
+
+  * Request: [Schema] or None
+  * Response: [Schema] or None
 
 #### Headers
 
@@ -112,7 +117,7 @@ Associates the specified cash advance(s) with the specified report.
 ### URI
 
 ```shell
-POST /expensereports/v4/reports/{reportId}/cashAdvances
+https://{datacenterURI}/expensereports/v4/reports/{reportId}/cashAdvances
 ```
 
 ### Parameters
@@ -121,6 +126,11 @@ POST /expensereports/v4/reports/{reportId}/cashAdvances
 |----------|----------|--------|--------------------------------------|
 | reportId | `string` | path   | The unique identifier of the report. |
 | body     | `AssociateRequest`  | application/json  | The request body containing the cash advances to associate. |
+
+### Payloads
+
+  * Request: [Schema] or None
+  * Response: [Schema] or None
 
 #### Headers
 
@@ -179,7 +189,7 @@ Disassociate the specified cash advance(s) from the specified report.
 ### URI
 
 ```shell
-DELETE /expensereports/v4/reports/{reportId}/cashAdvances?cashAdvanceIds={cashAdvanceId}
+https://{datacenterURI}/expensereports/v4/reports/{reportId}/cashAdvances?cashAdvanceIds={cashAdvanceId}
 ```
 
 ### Parameters
@@ -188,6 +198,11 @@ DELETE /expensereports/v4/reports/{reportId}/cashAdvances?cashAdvanceIds={cashAd
 |----------|----------------|--------|--------------------------------------|
 | reportId | `string`       | path   | The unique identifier of the report. |
 | cashAdvanceIds    | `List<String>` | query  | The unique identifier(s) of the cash advances to disassociate with the report |
+
+### Payloads
+
+  * Request: [Schema] or None
+  * Response: [Schema] or None
 
 #### Headers
 
