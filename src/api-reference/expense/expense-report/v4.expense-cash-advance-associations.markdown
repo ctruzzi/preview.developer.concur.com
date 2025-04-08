@@ -55,8 +55,8 @@ https://{datacenterURI}/expensereports/v4/reports/{reportId}/cashAdvances
 
 ### Payloads
 
-  * Request: [Schema] or None
-  * Response: [Schema] or None
+  * Request: None
+  * Response: [Cash Advances Response](#cash-advances-response-schema) 
 
 #### Headers
 
@@ -129,8 +129,8 @@ https://{datacenterURI}/expensereports/v4/reports/{reportId}/cashAdvances
 
 ### Payloads
 
-  * Request: [Schema] or None
-  * Response: [Schema] or None
+  * Request: [Cash Advance Associations Post](#cash-advances-post-schema) 
+  * Response: [Cash Advance Associations URI](#cash-advance-uri-schema)
 
 #### Headers
 
@@ -201,8 +201,8 @@ https://{datacenterURI}/expensereports/v4/reports/{reportId}/cashAdvances?cashAd
 
 ### Payloads
 
-  * Request: [Schema] or None
-  * Response: [Schema] or None
+  * Request: None
+  * Response: None
 
 #### Headers
 
@@ -248,17 +248,22 @@ curl --request DELETE 'https://us.api.concursolutions.com/expensereports/v4/repo
 |------|--------|--------|--------------------------------------|
 | id   | string | uuid   | The associated cash advance Id.      |
 
-### <a name="cash-advances-response-schema"></a> Cash Advances Response
+### <a name="cash-advances-response-schema"></a> Cash Advances Get Response
 
 | Name         | Type   | Format | Description                                      |
 |--------------|--------|--------|--------------------------------------------------|
-| cashAdvances | array  | -      | List of the associated cash advance objects.     |
+| cashAdvances | array  | [Cash Advance Response](#cash-advance-response-schema) | List of the associated cash advance objects.     |
 
-#### <a name="cash-advances-response-schema"></a> Cash Advances Response
+#### <a name="cash-advances-post-schema"></a> Cash Advances Response
 
 | Name         | Type   | Format | Description                                      |
 |--------------|--------|--------|--------------------------------------------------|
-| cashAdvances | array  | -      | List of the associated cash advance objects.     |
-| items        | object | -      | Refer to [Cash Advance Response](#cash-advance-response-schema) for details. |
+| cashAdvanceIds | array  | uuid    | List of the associated cash advance ids     |
+
+### <a name="cash-advance-uri-schema"></a> Cash Advance Response URI Response
+
+| Name | Type   | Format | Description                          |
+|------|--------|--------|--------------------------------------|
+| uri   | string | -   | The href to retrieve the cash advance associations      |
 
 
