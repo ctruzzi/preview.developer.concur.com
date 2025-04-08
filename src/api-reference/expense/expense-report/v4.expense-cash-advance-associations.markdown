@@ -21,7 +21,7 @@ Access to this documentation does not provide access to the API.
 | Name                       | Description                                                              | Endpoint     |
 |----------------------------|--------------------------------------------------------------------------|--------------|
 | `expense.report.read`      | Read information about cash advances associated with a report.           | GET          |
-| `expense.report.readwrite` | Read and write information about cash advances associated with a report. | POST, DELETE |
+| `expense.report.readwrite` | Read and write information about cash advances associated with a report. | GET, POST, DELETE |
 
 ## Dependencies <a name="dependencies"></a>
 
