@@ -5,7 +5,7 @@ layout: reference
 
 # Expense Cash Advance Associations v4.0
 
-The Expense Cash Advance Associations v4 API can be used for operations related to associating and dissociating cash advances with an expense report.
+The Expense Cash Advance Associations v4 API can be used for operations related to associating and disassociating cash advances with an expense report.
 
 ## <a name="limitations"></a>Limitations
 
